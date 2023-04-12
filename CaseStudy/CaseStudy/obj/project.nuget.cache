@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "O/cKVBf3QineyLMQ9IU5FT9M96yXTVSGtYboQhsTv5mVzoiqkidZ/vQ94unSfvkLRxyRyaHvcJgnE5007ZP7Iw==",
+  "dgSpecHash": "P8/XH/Ux53T11LM4If+SAnliZjsaAejLtMKBX5DvStsiLUUf3s0m/0t/v9iaqQixmCBqPrmmRjr1FDJzh26Dwg==",
   "success": true,
-  "projectFilePath": "/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/CaseStudy.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/QuestionOne.csproj",
+  "expectedPackageFiles": [
+    "/Users/mertcoskunirmak/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

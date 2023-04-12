@@ -1,0 +1,17 @@
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/bin/Debug/net7.0/QuestionTwo
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/bin/Debug/net7.0/QuestionTwo.deps.json
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/bin/Debug/net7.0/QuestionTwo.runtimeconfig.json
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/bin/Debug/net7.0/QuestionTwo.dll
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/bin/Debug/net7.0/QuestionTwo.pdb
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.csproj.AssemblyReference.cache
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.AssemblyInfoInputs.cache
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.AssemblyInfo.cs
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.csproj.CoreCompileInputs.cache
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.csproj.CopyComplete
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.dll
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/refint/QuestionTwo.dll
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.pdb
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/QuestionTwo.genruntimeconfig.cache
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/QuestionTwo/obj/Debug/net7.0/ref/QuestionTwo.dll

@@ -1,0 +1,17 @@
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/bin/Release/net7.0/CaseStudy
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/bin/Release/net7.0/CaseStudy.deps.json
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/bin/Release/net7.0/CaseStudy.runtimeconfig.json
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/bin/Release/net7.0/CaseStudy.dll
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/bin/Release/net7.0/CaseStudy.pdb
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/bin/Release/net7.0/Newtonsoft.Json.dll
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.csproj.AssemblyReference.cache
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.AssemblyInfoInputs.cache
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.AssemblyInfo.cs
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.csproj.CoreCompileInputs.cache
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.csproj.CopyComplete
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.dll
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/refint/CaseStudy.dll
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.pdb
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/CaseStudy.genruntimeconfig.cache
+/Users/mertcoskunirmak/Projects/myPrpject/CaseStudy/CaseStudy/obj/Release/net7.0/ref/CaseStudy.dll

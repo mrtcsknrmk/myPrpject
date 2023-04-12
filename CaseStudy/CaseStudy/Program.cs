@@ -1,115 +1,103 @@
 ﻿using System;
-using System.Collections;
+using System.Linq;
 
-namespace CaseStudy;
-public class Program
+namespace QuestionOne
 {
-    private static Random random = new Random();
-
-    public static void Main(string[] args)
+    public class Program
     {
-        const String POOL = "ACDEFGHKLMNPRTXYZ234579";
-
-        String generateCode = GetGenerateUniqueCode(POOL);
-
-        bool checkCode = CheckUniqueCode(generateCode, POOL);
-
-        if (checkCode)
+        public static void Main()
         {
-            System.Console.WriteLine(generateCode);
-        }
-        else
-        {
-            System.Console.WriteLine("hssss");
+            string characterSet = "ACDEFGHKLMNPRTXYZ234579";
+            string testCode = "";
+
+            GenerateCampaignCode(characterSet);
+
+            TestCodeInRule(testCode);
+
+            CheckCampaingCode(characterSet, testCode);
+
         }
 
-    }
-
-    private static string GetGenerateUniqueCode(string pool)
-    {
-        //Get first index
-        String firstIndex = new(Enumerable.Repeat(pool, 1)
-            .Select(s => s[random.Next(s.Length)]).ToArray());
-
-        //Get last index
-        String lastIndex = firstIndex;
-
-        //Generate random code
-        String codeIndex = new(Enumerable.Repeat(pool, 6)
-            .Select(s => s[random.Next(s.Length)]).ToArray());
-        return firstIndex + codeIndex + lastIndex;
-    }
-
-    private static bool CheckUniqueCode(string generateCode, string pool)
-    {
-        int codeLen = generateCode.Length;
-        List<string> arrCode = new List<string>();
-
-        //String[] arrCode = Array.Empty<string>();
-        int cnt = 0;
-        String codeCheck = "";
-
-        if (codeLen != 8)
+        private static void CheckCampaingCode(string characterSet, string testCode)
         {
-            System.Console.WriteLine("Kod 8 karakterli olmalıdır!");
-            return false;
-        }
+            bool isValid = true;
 
-        //String[] arr = Array.Empty<string>();
-        List<string> arr = new List<string>();
-
-        for (int i = 0; i < pool.Length; i++)
-        {
-            //List<string> list = new List<string>();
-            //list.Add("Hi");
-            //String[] str = list.ToArray();
-            arr.Add(pool[i].ToString());
-        }
-
-        for (int j = 0; j < codeLen; j++)
-        {
-            arrCode.Add(generateCode[j].ToString());
-        }
-
-        Decimal ind = pool.IndexOf(arrCode[cnt]);
-        while (cnt < 8)
-        {
-            codeCheck += arr[(int)ind];
-            if (ind < 12)
+            // Kodun uzunluğu 8 mi diye kontrol edilir
+            if (testCode.Length != 8)
             {
-                ind += cnt;
+                isValid = false;
             }
             else
             {
-                ind -= cnt;
+                // Kodun her bir karakteri kontrol edilir
+                for (int i = 0; i < testCode.Length; i++)
+                {
+                    char currentChar = testCode[i];
+
+                    // İlk karakter karakterSet içinde yer alıyor mu diye kontrol edilir
+                    if (i == 0 && !characterSet.Contains(currentChar))
+                    {
+                        isValid = false;
+                        break;
+                    }
+
+                    // İkinci, üçüncü, dördüncü ve beşinci karakterler karakterSet'in ilk 17 karakteri arasındamı diye kontrol edilir
+                    if (i > 0 && i < 5 && !characterSet.Substring(0, 17).Contains(currentChar))
+                    {
+                        isValid = false;
+                        break;
+                    }
+
+                    // Son üç karakter karakterSet'in son 6 karakteri arasındamı diye kontrol edilir
+                    if (i > 4 && !characterSet.Substring(characterSet.Length - 6).Contains(currentChar))
+                    {
+                        isValid = false;
+                        break;
+                    }
+                }
             }
 
-            if (ind >= 12 && ind < 24)
+            if (isValid)
             {
-                ind = ind;
+                Console.WriteLine("Geçerli bir kod girdiniz.");
             }
-            else if (ind < 12)
+            else
             {
-                ind *= 2;
-            }
-            else if (ind > 24)
-            {
-                ind = Math.Floor(ind / 2);
+                Console.WriteLine("Geçersiz bir kod girdiniz.");
             }
 
-            cnt++;
+            Console.ReadKey();
         }
 
-        if (generateCode == codeCheck)
+        private static void TestCodeInRule(string testCode)
         {
-            System.Console.WriteLine("Kod doğrulandı");
-            return true;
+            // Test Kontrolü
+            Console.Write("Kodunuzu test edin: ");
+            testCode = Console.ReadLine();
         }
-        else
+
+        private static void GenerateCampaignCode(string characterSet)
         {
-            System.Console.WriteLine("KOD DOĞRULANAMADI!!!");
-            return false;
+            // Kod Üretimi
+            string code = "";
+            Random random = new Random();
+
+            // İlk karakter karakterSet içinden rastgele seçilir
+            code += characterSet[random.Next(0, characterSet.Length)];
+
+            // İkinci, üçüncü, dördüncü ve beşinci karakterler karakterSet'in ilk 17 karakteri arasından seçilir
+            for (int i = 0; i < 4; i++)
+            {
+                code += characterSet[random.Next(0, 17)];
+            }
+
+            // Son üç karakter ise karakterSet'in son 6 karakteri arasından seçilir
+            for (int i = 0; i < 3; i++)
+            {
+                code += characterSet.Substring(characterSet.Length - 6)[random.Next(0, 6)];
+            }
+
+            Console.WriteLine($"Üretilen Kod: {code}");
         }
     }
 }
-
